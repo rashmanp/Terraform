@@ -5,3 +5,8 @@ output "name" {
 output "something" {
     value = "${path.module}"
 }
+
+resource "aws_s3_bucket" "test"
+{
+  acl = "Private"
+}
